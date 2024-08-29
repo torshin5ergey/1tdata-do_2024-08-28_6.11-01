@@ -6,3 +6,4 @@ COPY . .
 
 ENTRYPOINT ["python", "./app.py"]
 CMD []
+

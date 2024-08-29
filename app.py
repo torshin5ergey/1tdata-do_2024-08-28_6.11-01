@@ -11,12 +11,12 @@ def greetings(name):
     print(f"Hello, {name}!")
 
 def print_current_datetime():
-    """Print current date and time
+    """Print current date and time.
     """
     print(f"Current time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 def count_files(path):
-    """
+    """Count the total number of files in the specified path recursively.
     """
     count_files = 0
     for _, _, filenames in os.walk(path):
@@ -24,6 +24,8 @@ def count_files(path):
     return count_files
 
 def find_top10_largest_files(path):
+    """Find the top 10 largest files in the specified path recursively.
+    """
     top10heap = []
     for dirpath, _, filenames in os.walk(path):
         for file in filenames:
@@ -41,6 +43,7 @@ def find_top10_largest_files(path):
 
     top10heap.sort(reverse=True, key=lambda x: x[1])
     return top10heap
+
 
 if __name__ == "__main__":
     # 1
