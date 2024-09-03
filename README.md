@@ -1,25 +1,26 @@
-# 2024-08-28_6.11-01
+# Итоговая аттестация. Задание 1
 
-## Итоговая аттестация. Задание 1
 Торшин Сергей
 
-### Docker образ
-Docker команда
-```bash
-docker push torshin5ergey/1tdata-ia01:latest
-```
-
-### Запуск 
-1. Запуск без аргумента (по умолчанию приветствие для User).
+## Запуск 
+1. Загрузить репозиторий
     ```bash
-    docker run --rm torshin5ergey/1tdata-ia01
+    git clone https://github.com/torshin5ergey/1tdata-do_2024-08-28_6.11-01.git
     ```
-    ![](screenshot_01.jpg)
-
-2. Запуск с аргументом.
+2. Перейти в директорию репозитория
     ```bash
-    docker run --rm torshin5ergey/1tdata-ia01 Alice
+    cd 1tdata-do_2024-08-28_6.11-01
     ```
-    ![](screenshot_02.jpg)
+3. Запуск контейнера
+    - Без аргумента (по умолчанию приветствие для User)
+        ```bash
+        docker run --rm torshin5ergey/1tdata-do_2024-08-28_6.11-01-app
+        ```
+        ![](screenshot_01.jpg)
+    - С аргументом
+        ```bash
+        docker run --rm torshin5ergey/1tdata-do_2024-08-28_6.11-01-app Alice
+        ```
+        ![](screenshot_02.jpg)
 
-Ссылка на образ в Docker Hub: https://hub.docker.com/repository/docker/torshin5ergey/1tdata-ia01/general
+Ссылка на образ Python-приложения в Docker Hub: [torshin5ergey/1tdata-do_2024-08-28_6.11-01-app](https://hub.docker.com/repository/docker/torshin5ergey/1tdata-do_2024-08-28_6.11-01-app/general)
